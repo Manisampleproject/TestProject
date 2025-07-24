@@ -1,8 +1,15 @@
-import AWS from 'aws-sdk';
+// import AWS from 'aws-sdk';
+// import aws_message from 'aws-sdk/lib/maintenance_mode_message';
+// aws_message.suppress = true;
 
-const gotInstance = require('../utils/gotInstance')
-const tdata = require('../resources/TestData/tdata')
-const { faker } = require('@faker-js/faker');
+import { gotInstance } from '../utils/gotInstance.js';
+import tdata from '../resources/TestData/tdata.js'
+import faker from 'faker';
+
+
+// const gotInstance = require('../utils/gotInstance')
+// const tdata = require('../resources/TestData/tdata')
+// const { faker } = require('@faker-js/faker');
 
 
 //Generate random sting
@@ -43,7 +50,7 @@ const callapi = async (fname, lname, zip, mrn) => {
 
             })
 
-        return testapi.data
+        return testapi
 
 
     } catch (error) {

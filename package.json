@@ -2,6 +2,7 @@
   "name": "sampleautomation",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "test": "tests"
   },
@@ -12,13 +13,14 @@
   },
   "dependencies": {
     "add-to-path": "^1.1.2",
-    "aws-sdk": "^2.1187.0",
+    "aws-sdk": "^2.1692.0",
     "browserstack-local": "^1.4.8",
     "chai": "^4.3.4",
     "chai-http": "^4.4.0",
     "chai-match": "^1.1.1",
     "dotenv": "^17.2.0",
-    "faker": "^5.1.0",
+    "faker": "^5.5.3",
+    "got": "^14.4.7",
     "lodash": "^4.17.21",
     "mocha": "^11.7.1",
     "mocha-tags": "^1.0.1",

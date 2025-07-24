@@ -1,5 +1,5 @@
 
-const ScriptHelper = require('../../resources/scriptHelper').ScriptHelper
+const ScriptHelper = require('../../resources/scriptHelper.js').ScriptHelper
 var test = require('selenium-webdriver/testing');
 const login = require('../../pages/home.js').Homelogin
 const about = require('../../pages/aboutus.js').aboutus

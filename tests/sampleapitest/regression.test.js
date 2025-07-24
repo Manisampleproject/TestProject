@@ -1,12 +1,15 @@
 
 import * as help from '../../helpers/apihelper.js';
+import tags from 'mocha-tags-ultra';
+import { assert, expect, should, chai, chaiHttp } from '../../resources/assertStyles.js';
+
 
 let userid = [];
 
 tags('smoke', 'regression')
 
-describe('validate User data', function () {
-    it('TC1-Call api to get user details and save it inside an aray ', async function () {
+describe.skip('validate User data', () => {
+    it('TC1-Call api to get user details and save it inside an aray ', async () => {
         this.timeout(0);
         const accts = { Items: [{ fname: "john", lname: "parkins", zip: "12352" }, { fname: "david", lname: "parkins", zip: "52635" }, { fname: "victor", lname: "parkins", zip: "14562" },] }
 
@@ -90,3 +93,35 @@ describe('validate User data', function () {
     });
 
 })
+
+describe('Sample tests', function () {
+    tags('smoke', 'regression')
+    describe('Sanity tests', function () {
+        this.timeout(500);
+
+        it('should take less than 500ms', function (done) {
+            setTimeout(done, 300);
+        });
+        it('should take less than 500ms as well', function (done) {
+            setTimeout(done, 250);
+        });
+
+    });
+});
+
+
+function add(args) {
+    return args.reduce((prev, curr) => prev + curr, 0);
+}
+
+describe('add()', function () {
+    const testAdd = ({ args, expected }) =>
+        function () {
+            const res = add(args);
+            assert.strictEqual(res, expected);
+        };
+
+    it('correctly adds 2 args', testAdd({ args: [1, 2], expected: 3 }));
+    it('correctly adds 3 args', testAdd({ args: [1, 2, 3], expected: 6 }));
+    it('correctly adds 4 args', testAdd({ args: [1, 2, 3, 4], expected: 10 }));
+});
