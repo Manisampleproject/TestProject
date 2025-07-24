@@ -1,0 +1,18 @@
+Log for test with RunId - 24_6_2025_3_43_24_647
+Script Run ID - 24_6_2025_3_43_24_647
+Script Number Run ID - 646202562434324
+getConfigurationProperties - Configuration properties
+
+Browser - headlesschrome
+/Users/manikarunan/Desktop/SampletestProj/TestProject - - is the project directory
+getProjectDirectory - /Users/manikarunan/Desktop/SampletestProj/TestProject
+createResultsFolder - Script Results Folder with Run ID Created
+createScreenshotsFolder - Screenshots folder Created/Users/manikarunan/Desktop/SampletestProj/TestProject/Results/Login and validate/24_6_2025_3_43_24_647/Screenshots
+Current Test Case Name isLogin and validate Page title - undefined
+createTestFolder - Folder Created
+createTestFolder - /Users/manikarunan/Desktop/SampletestProj/TestProject/Results/Login and validate/24_6_2025_3_43_24_647/Screenshots/Login and validate Page title - undefined folder Created
+Browser config :headlesschrome
+Failed while logging in to Application   - FailedError: Error occured while launching the browserTypeError: (intermediate value).headless is not a function
+Issues while launching the Application: Failed
+getWebElement: Element doesn't exist : By(xpath, //a[contains(@class, 'loggedInUserName')]) - TypeError: Cannot read properties of undefined (reading 'wait')
+clickOnElement Failed: By(xpath, //a[contains(@class, 'loggedInUserName')]) TypeError: Cannot read properties of undefined (reading 'manage'): Failed
