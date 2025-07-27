@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha tests/**/*.test.js",
+    "test": "mocha",
     "sampleuitest": "npm run test -- ./tests/sampleuitest/parabank.test.js",
     "sampleapitest": "npm run test -- ./tests/sampleapitest/regression.test.js"
   },
