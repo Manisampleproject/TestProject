@@ -35,4 +35,4 @@ jobs:
       DD_CIVISIBILITY_AGENTLESS_ENABLED: true
       DD_API_KEY: ${{secrets.DD_API_KEY}}
       DD_SITE: us5.datadoghq.com
-      NODE_OPTIONS: "-r dd-trace/ci/init"
+      NODE_OPTIONS: -require dd-trace/ci/init
