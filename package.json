@@ -40,6 +40,7 @@
   "description": "Sample Test automation",
   "devDependencies": {
     "chromedriver": "^138.0.3",
+    "dd-trace": "^5.61.1",
     "selenium-webdriver": "^4.34.0"
   }
 }
