@@ -1,0 +1,22 @@
+config:
+  target: "https://parabank.parasoft.com/parabank/index.htm"
+  phases:
+    - arrivalRate: 1
+      duration: 10
+      name: Warm up max
+    - duration: 2
+      arrivalRate: 11
+      rampTo: 13
+      name: Ramp up load max
+    - duration: 2
+      arrivalRate: 17
+      name: Sustained load max
+  plugins:
+    expect: {}
+    metrics-by-endpoint: {}
+scenarios:
+  - flow:
+      - get:
+          url: "/"
+          expect:
+            - statusCode: 404
