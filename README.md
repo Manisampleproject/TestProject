@@ -4,7 +4,7 @@ Installation: Install Node.js (latest stable version) Download Node.js – NPM c
 
 Clone the repository:
 
-git clone https://github.com/Manisampleproject/SampleAutomation.git cd SampleAutomation
+git clone https://github.com/Manisampleproject/TestProject.git 
 
 Install dependencies
 
