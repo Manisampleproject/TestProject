@@ -24,15 +24,11 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
-        node-version: 20
+        node-version: 18
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
     - name: Run tests
       shell: bash
       run: npm test
-    env:
-      DD_CIVISIBILITY_AGENTLESS_ENABLED: true
-      DD_API_KEY: ${{secrets.DD_API_KEY}}
-      DD_SITE: us5.datadoghq.com
-      NODE_OPTIONS: -r dd-trace/ci/init
+
