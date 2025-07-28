@@ -9,7 +9,7 @@ config:
       rampTo: 13
       name: Ramp up load max
     - duration: 2
-      arrivalRate: 17
+      arrivalRate: 20
       name: Sustained load max
   plugins:
     expect: {}

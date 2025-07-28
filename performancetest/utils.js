@@ -25,7 +25,6 @@ const setTokens = async () => {
     console.log(error);
   }
 
-}
 
 const stringifyNums = (context, events, done) => {
   context.vars.id = context.vars.id.toString();
