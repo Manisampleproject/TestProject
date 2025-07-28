@@ -41,11 +41,14 @@ This project uses Artillery for performance testing.
 
 Installation:
 
-npm install -g artillery Performance Test Files: All performance tests are located in the performancetest/ directory.
+npm install -g artillery 
 
-Run a Performance Test:
+Performance Test Files: All performance tests are located in the performancetest/ directory.
 
-artillery run performancetest/loadTest.yml -o performancetest/report.json Generate HTML Report: artillery report performancetest/report.json -o performancetest/report.html
+Run Performance Test:
+
+artillery run performancetest/loadTest.yml -o performancetest/report.json 
+Generate HTML Report: artillery report performancetest/report.json -o performancetest/report.html
 
 
 Datadog Integration:
