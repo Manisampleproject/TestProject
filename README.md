@@ -48,6 +48,7 @@ Performance Test Files: All performance tests are located in the performancetest
 Run Performance Test:
 
 artillery run performancetest/loadTest.yml -o performancetest/report.json 
+
 Generate HTML Report: artillery report performancetest/report.json -o performancetest/report.html
 
 
